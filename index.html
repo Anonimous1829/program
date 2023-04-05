@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de videos aleatorios</title>
+</head>
+<body>
+
+
+<style>
+    *{
+     background: fff#;
+     margin: 0pc;
+     padding: 0px;
+    }
+    video{
+    margin: 6px 10px;
+       
+        background: gray;
+        width: 300px;
+        height: 200px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+       
+    }
+    .inicio p{
+        padding: 20px;
+        background: #fff;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        text-align: center;
+        font-size: 26px;
+        
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #333;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+
+    }
+</style>
+<div class="inicio">
+    <p>Videos ramdon program</p>
+</div>
+<div id="videos-container">
+
+    <!-- Aquí puedes agregar los elementos de video que quieras mostrar -->
+    <video src="video1.mp4" controls></video>
+    <video src="video2.mp4" controls></video>
+    <video src="video3.mp4" controls></video>
+    <video src="video4.mp4" controls></video>
+</div>
+
+
+<script>
+    // Obtener el contenedor de videos
+    var videosContainer = document.getElementById("videos-container");
+
+    // Obtener todos los elementos de video dentro del contenedor
+    var videos = videosContainer.getElementsByTagName("video");
+
+    // Obtener un índice aleatorio
+    var index = Math.floor(Math.random() * videos.length);
+
+    // Ocultar todos los videos
+    for (var i = 0; i < videos.length; i++) {
+        videos[i].style.display = "none";
+    }
+
+    // Mostrar el video aleatorio
+    videos[index].style.display = "block";
+</script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    
+    
+    <script>
+      swal({
+        title: "  Program ",
+        text: "as seleccionado la parte que repuedoce aleatoriamente videos de peogramacion en bash html ",
+    
+       
+      });
+    </script>
+</body>
+</html>
